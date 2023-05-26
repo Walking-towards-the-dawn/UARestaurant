@@ -1,0 +1,194 @@
+@import url(base.scss);
+@import url(adaptive.scss);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+html,
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: url('../img/design1.png') 50% 54px/600px no-repeat, url('../img/prinada-bg1.jpg') 0 0/100% 100% no-repeat;
+}
+
+// !Start Header
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 330px;
+	background: url('../img/header-bg-img.jpeg') 0/100% auto no-repeat;
+
+	div:last-of-type {
+		h1 {
+			margin-top: 28px;
+			font-size: 38px;
+			font-weight: 600;
+			text-transform: uppercase;
+			text-align: center;
+			text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+		}
+	}
+}
+
+.nav {
+	background-color: #0e0e0e;
+	height: 60px;
+	text-transform: uppercase;
+	position: fixed;
+	z-index: 100;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+.nav__container {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 10px 70px 0;
+	max-width: 1200px;
+
+	div:first-of-type {
+		display: inline-flex;
+		align-items: center;
+
+		img {
+			height: 40px;
+			width: 40px;
+		}
+
+		pre {
+			font-size: 14px;
+			font-family: 'Lobster', cursive;
+		}
+	}
+	//------------
+	.nav_container__link {
+		display: inline-flex;
+		align-items: center;
+
+		div:nth-of-type(1) ul {
+			display: inline-flex;
+			margin: 0 60px 0 0;
+
+			li a:hover {
+				color: #b68461;
+				border-bottom: 1px solid;
+			}
+			li {
+				margin-left: 20px;
+			}
+
+			li:nth-child(1) {
+				margin-left: 0;
+			}
+		}
+
+		div:nth-of-type(2) {
+			a {
+				padding: 4px 16px;
+				text-align: center;
+				border: 1px solid #fff;
+				border-radius: 24px;
+			}
+
+			a:hover {
+				background-color: #b68461;
+				border-color: #b68461;
+				transition: all ease 0.4s;
+			}
+		}
+	}
+}
+
+// !Finish Header
+
+// !Start Main
+
+.main {
+	display: grid;
+	margin: 140px auto 0;
+	max-width: 1200px;
+	grid-template-columns: 400px 400px;
+	grid-gap: 60px 80px;
+	align-items: center;
+	justify-content: space-around;
+
+	h3 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+	}
+
+	table {
+		border-top: 1px solid #616161;
+		margin: 20px 0 0 0;
+
+		tbody {
+			letter-spacing: 1px;
+			line-height: normal;
+			font-size: 16px;
+			font-family: 'Open Sans', sans-serif;
+			width: 100%;
+
+			td {
+				padding: 10px 0;
+				border-bottom: 1px solid #616161;
+			}
+
+			td:nth-child(2),
+			td:last-child {
+				width: 86px;
+				text-align: center;
+			}
+		}
+	}
+}
+
+// !Finish Main
+
+// !Start Footer
+
+.footer {
+	background: url('../img/prinada-bg2.jpg') 0/100% auto no-repeat;
+	margin: 100px auto 0;
+	height: 294px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: column;
+
+	.footer__container {
+		background: url('../img/design3-menu.png') -2% 2%/355px no-repeat;
+		display: inline-flex;
+		justify-content: center;
+		margin: 40px 0 0 0;
+
+		div {
+			width: 180px;
+			margin: 0 20px 0 20px;
+		}
+
+		div:nth-child(2) {
+			height: 200px;
+			width: 200px;
+		}
+
+		h6 {
+			font-size: 16px;
+			font-weight: 900;
+			margin: 20px 0 10px 0;
+			text-transform: uppercase;
+		}
+	}
+
+	address {
+		height: 54px;
+		font-size: 16px;
+		text-align: center;
+		color: #a3a5a4;
+		background: black;
+		padding: 15px 0;
+	}
+}
+
+// !Finish Footer

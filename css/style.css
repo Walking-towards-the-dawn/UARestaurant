@@ -1,0 +1,194 @@
+@import url(base.scss);
+@import url(adaptive.scss);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  background: url("../img/design1.png") 50% 54px/600px no-repeat, url("../img/prinada-bg1.jpg") 0 0/100% 100% no-repeat;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 330px;
+  background: url("../img/header-bg-img.jpeg") 0/100% auto no-repeat;
+}
+.header div:last-of-type h1 {
+  margin-top: 28px;
+  font-size: 38px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.nav {
+  background-color: #0e0e0e;
+  height: 60px;
+  text-transform: uppercase;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.nav__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding: 10px 70px 0;
+  max-width: 1200px;
+}
+.nav__container div:first-of-type {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav__container div:first-of-type img {
+  height: 40px;
+  width: 40px;
+}
+.nav__container div:first-of-type pre {
+  font-size: 14px;
+  font-family: "Lobster", cursive;
+}
+.nav__container .nav_container__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav__container .nav_container__link div:nth-of-type(1) ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0 60px 0 0;
+}
+.nav__container .nav_container__link div:nth-of-type(1) ul li a:hover {
+  color: #b68461;
+  border-bottom: 1px solid;
+}
+.nav__container .nav_container__link div:nth-of-type(1) ul li {
+  margin-left: 20px;
+}
+.nav__container .nav_container__link div:nth-of-type(1) ul li:nth-child(1) {
+  margin-left: 0;
+}
+.nav__container .nav_container__link div:nth-of-type(2) a {
+  padding: 4px 16px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 24px;
+}
+.nav__container .nav_container__link div:nth-of-type(2) a:hover {
+  background-color: #b68461;
+  border-color: #b68461;
+  -webkit-transition: all ease 0.4s;
+  -o-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+}
+
+.main {
+  display: grid;
+  margin: 140px auto 0;
+  max-width: 1200px;
+  grid-template-columns: 400px 400px;
+  grid-gap: 60px 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.main h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main table {
+  border-top: 1px solid #616161;
+  margin: 20px 0 0 0;
+}
+.main table tbody {
+  letter-spacing: 1px;
+  line-height: normal;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+}
+.main table tbody td {
+  padding: 10px 0;
+  border-bottom: 1px solid #616161;
+}
+.main table tbody td:nth-child(2),
+.main table tbody td:last-child {
+  width: 86px;
+  text-align: center;
+}
+
+.footer {
+  background: url("../img/prinada-bg2.jpg") 0/100% auto no-repeat;
+  margin: 100px auto 0;
+  height: 294px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer .footer__container {
+  background: url("../img/design3-menu.png") -2% 2%/355px no-repeat;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 0 0 0;
+}
+.footer .footer__container div {
+  width: 180px;
+  margin: 0 20px 0 20px;
+}
+.footer .footer__container div:nth-child(2) {
+  height: 200px;
+  width: 200px;
+}
+.footer .footer__container h6 {
+  font-size: 16px;
+  font-weight: 900;
+  margin: 20px 0 10px 0;
+  text-transform: uppercase;
+}
+.footer address {
+  height: 54px;
+  font-size: 16px;
+  text-align: center;
+  color: #a3a5a4;
+  background: black;
+  padding: 15px 0;
+}
