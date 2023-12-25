@@ -1,388 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Restaurant</title>
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/base.css" />
-		<link rel="stylesheet" href="css/adaptive.css" />
-	</head>
-	<body>
-		<header class="header">
-			<nav class="nav">
-				<div class="nav__container">
-					<div>
-						<img src="img/header-logo.svg" alt="" />
-						<pre>
-  Hudson
-	  Cuisine</pre
-						>
-					</div>
 
-					<div class="nav_container__link">
-						<div>
-							<ul>
-								<li><a href="#" target="_parent">Home</a></li>
-								<li><a href="#">Menu</a></li>
-								<li><a href="#">Contact Us</a></li>
-							</ul>
-						</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+  <title>Restaurant</title>
+  <link rel="stylesheet"
+        href="css/style.css" />
+  <link rel="stylesheet"
+        href="css/base.css" />
+  <link rel="stylesheet"
+        href="css/adaptive.css" />
+</head>
 
-						<div><a href="#">Book a table</a></div>
-					</div>
-				</div>
-			</nav>
-			<div><h1>Ukrainian cuisine</h1></div>
-		</header>
+<body>
+  <div class="wrapper">
+    <!-- ------------ Header ------------ -->
+    <header class="header">
+      <div class="nav__container">
+        <nav class="nav">
+          <div class="logo">
+            <img class="logo__img"
+                 src="img/header-logo.svg"
+                 alt="" />
+            <p>Hudson Cuisine</p>
+          </div>
 
-		<main class="main">
-			<div>
-				<div><img src="img/header-bg-img.jpeg" alt="img" /></div>
-				<table>
-					<tbody>
-						<tr>
-							<td><h3>ГАРЯЧІ ЗАКУСКИ | HOT APPETIZERS</h3></td>
-							<td>Вихід, г</td>
-							<td>Ціна, грн</td>
-						</tr>
+          <ul class="menu__list-items">
+            <li class="list-item">
+              <a href="#"
+                 target="_parent">Home</a>
+            </li>
 
-						<tr>
-							<td>
-								Гречані бейбі голубчики зі сметаною <span><em>/ Buckwheat baby cabbage rolls with sour cream</em></span>
-							</td>
-							<td>250</td>
-							<td>175</td>
-						</tr>
-						<tr>
-							<td>
-								Кольорові млинці з куркою і грибами <span><em>/ Colored pancakes with chicken and mushrooms</em></span>
-							</td>
-							<td>250</td>
-							<td>185</td>
-						</tr>
-						<tr>
-							<td>
-								Сир Халумі на грилі з апельсиновим конфітюром <span><em>/ Grilled Halloumi cheese with orange jam</em></span>
-							</td>
-							<td>150</td>
-							<td>235</td>
-						</tr>
-						<tr>
-							<td>
-								Фірмові деруни з грибним соусом та пармезаном <span><em>/</em> <em>Signature potato pancakes (</em>deruny) </span><span><em>with mushroom sauce and parmesan</em></span>
-							</td>
-							<td>250</td>
-							<td>195</td>
-						</tr>
-						<tr>
-							<td>
-								Фірмові деруни з лососем від Шефа <span><em>/ Signature potato pancakes (deruny) with salmon from the Chief</em></span>
-							</td>
-							<td>200</td>
-							<td>425</td>
-						</tr>
-						<tr>
-							<td>
-								Смажені пельмені з сирним соусом <span><em>/ Fried dumplings with cheese sauce</em></span>
-							</td>
-							<td>200</td>
-							<td>215</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div>
-				<div><img src="img/header-bg-img.jpeg" alt="img" /></div>
-				<table>
-					<tbody>
-						<tr>
-							<td><h3>ГАРЯЧІ ЗАКУСКИ | HOT APPETIZERS</h3></td>
-							<td>Вихід, г</td>
-							<td>Ціна, грн</td>
-						</tr>
+            <li class="list-item">
+              <a href="#">Menu</a>
+            </li>
 
-						<tr>
-							<td>
-								Гречані бейбі голубчики зі сметаною <span><em>/ Buckwheat baby cabbage rolls with sour cream</em></span>
-							</td>
-							<td>250</td>
-							<td>175</td>
-						</tr>
-						<tr>
-							<td>
-								Кольорові млинці з куркою і грибами <span><em>/ Colored pancakes with chicken and mushrooms</em></span>
-							</td>
-							<td>250</td>
-							<td>185</td>
-						</tr>
-						<tr>
-							<td>
-								Сир Халумі на грилі з апельсиновим конфітюром <span><em>/ Grilled Halloumi cheese with orange jam</em></span>
-							</td>
-							<td>150</td>
-							<td>235</td>
-						</tr>
-						<tr>
-							<td>
-								Фірмові деруни з грибним соусом та пармезаном <span><em>/</em> <em>Signature potato pancakes (</em>deruny) </span><span><em>with mushroom sauce and parmesan</em></span>
-							</td>
-							<td>250</td>
-							<td>195</td>
-						</tr>
-						<tr>
-							<td>
-								Фірмові деруни з лососем від Шефа <span><em>/ Signature potato pancakes (deruny) with salmon from the Chief</em></span>
-							</td>
-							<td>200</td>
-							<td>425</td>
-						</tr>
-						<tr>
-							<td>
-								Смажені пельмені з сирним соусом <span><em>/ Fried dumplings with cheese sauce</em></span>
-							</td>
-							<td>200</td>
-							<td>215</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div>
-				<div><img src="img/header-bg-img.jpeg" alt="img" /></div>
-				<table>
-					<tbody>
-						<tr>
-							<td><h3>ГАРЯЧІ ЗАКУСКИ | HOT APPETIZERS</h3></td>
-							<td>Вихід, г</td>
-							<td>Ціна, грн</td>
-						</tr>
+            <li class="list-item">
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
 
-						<tr>
-							<td>
-								Гречані бейбі голубчики зі сметаною <span><em>/ Buckwheat baby cabbage rolls with sour cream</em></span>
-							</td>
-							<td>250</td>
-							<td>175</td>
-						</tr>
-						<tr>
-							<td>
-								Кольорові млинці з куркою і грибами <span><em>/ Colored pancakes with chicken and mushrooms</em></span>
-							</td>
-							<td>250</td>
-							<td>185</td>
-						</tr>
-						<tr>
-							<td>
-								Сир Халумі на грилі з апельсиновим конфітюром <span><em>/ Grilled Halloumi cheese with orange jam</em></span>
-							</td>
-							<td>150</td>
-							<td>235</td>
-						</tr>
-						<tr>
-							<td>
-								Фірмові деруни з грибним соусом та пармезаном <span><em>/</em> <em>Signature potato pancakes (</em>deruny) </span><span><em>with mushroom sauce and parmesan</em></span>
-							</td>
-							<td>250</td>
-							<td>195</td>
-						</tr>
-						<tr>
-							<td>
-								Фірмові деруни з лососем від Шефа <span><em>/ Signature potato pancakes (deruny) with salmon from the Chief</em></span>
-							</td>
-							<td>200</td>
-							<td>425</td>
-						</tr>
-						<tr>
-							<td>
-								Смажені пельмені з сирним соусом <span><em>/ Fried dumplings with cheese sauce</em></span>
-							</td>
-							<td>200</td>
-							<td>215</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div>
-				<div><img src="img/header-bg-img.jpeg" alt="img" /></div>
-				<table>
-					<tbody>
-						<tr>
-							<td><h3>ГАРЯЧІ ЗАКУСКИ | HOT APPETIZERS</h3></td>
-							<td>Вихід, г</td>
-							<td>Ціна, грн</td>
-						</tr>
+          <a class="nav__btn"
+             href="#">Book a table</a>
+        </nav>
+      </div>
+    </header>
+    <!-- ------------ Header ------------ -->
 
-						<tr>
-							<td>
-								Гречані бейбі голубчики зі сметаною <span><em>/ Buckwheat baby cabbage rolls with sour cream</em></span>
-							</td>
-							<td>250</td>
-							<td>175</td>
-						</tr>
-						<tr>
-							<td>
-								Кольорові млинці з куркою і грибами <span><em>/ Colored pancakes with chicken and mushrooms</em></span>
-							</td>
-							<td>250</td>
-							<td>185</td>
-						</tr>
-						<tr>
-							<td>
-								Сир Халумі на грилі з апельсиновим конфітюром <span><em>/ Grilled Halloumi cheese with orange jam</em></span>
-							</td>
-							<td>150</td>
-							<td>235</td>
-						</tr>
-						<tr>
-							<td>
-								Фірмові деруни з грибним соусом та пармезаном <span><em>/</em> <em>Signature potato pancakes (</em>deruny) </span><span><em>with mushroom sauce and parmesan</em></span>
-							</td>
-							<td>250</td>
-							<td>195</td>
-						</tr>
-						<tr>
-							<td>
-								Фірмові деруни з лососем від Шефа <span><em>/ Signature potato pancakes (deruny) with salmon from the Chief</em></span>
-							</td>
-							<td>200</td>
-							<td>425</td>
-						</tr>
-						<tr>
-							<td>
-								Смажені пельмені з сирним соусом <span><em>/ Fried dumplings with cheese sauce</em></span>
-							</td>
-							<td>200</td>
-							<td>215</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div>
-				<div><img src="img/header-bg-img.jpeg" alt="img" /></div>
-				<table>
-					<tbody>
-						<tr>
-							<td><h3>ГАРЯЧІ ЗАКУСКИ | HOT APPETIZERS</h3></td>
-							<td>Вихід, г</td>
-							<td>Ціна, грн</td>
-						</tr>
+    <!-- ------------ Main ------------ -->
+    <main class="main">
+      <section class="main__section">
+        <div class="main-section__container">
 
-						<tr>
-							<td>
-								Гречані бейбі голубчики зі сметаною <span><em>/ Buckwheat baby cabbage rolls with sour cream</em></span>
-							</td>
-							<td>250</td>
-							<td>175</td>
-						</tr>
-						<tr>
-							<td>
-								Кольорові млинці з куркою і грибами <span><em>/ Colored pancakes with chicken and mushrooms</em></span>
-							</td>
-							<td>250</td>
-							<td>185</td>
-						</tr>
-						<tr>
-							<td>
-								Сир Халумі на грилі з апельсиновим конфітюром <span><em>/ Grilled Halloumi cheese with orange jam</em></span>
-							</td>
-							<td>150</td>
-							<td>235</td>
-						</tr>
-						<tr>
-							<td>
-								Фірмові деруни з грибним соусом та пармезаном <span><em>/</em> <em>Signature potato pancakes (</em>deruny) </span><span><em>with mushroom sauce and parmesan</em></span>
-							</td>
-							<td>250</td>
-							<td>195</td>
-						</tr>
-						<tr>
-							<td>
-								Фірмові деруни з лососем від Шефа <span><em>/ Signature potato pancakes (deruny) with salmon from the Chief</em></span>
-							</td>
-							<td>200</td>
-							<td>425</td>
-						</tr>
-						<tr>
-							<td>
-								Смажені пельмені з сирним соусом <span><em>/ Fried dumplings with cheese sauce</em></span>
-							</td>
-							<td>200</td>
-							<td>215</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div>
-				<div><img src="img/header-bg-img.jpeg" alt="img" /></div>
-				<table>
-					<tbody>
-						<tr>
-							<td><h3>ГАРЯЧІ ЗАКУСКИ | HOT APPETIZERS</h3></td>
-							<td>Вихід, г</td>
-							<td>Ціна, грн</td>
-						</tr>
+          <h1 class="title">Ukrainian cuisine</h1>
 
-						<tr>
-							<td>
-								Гречані бейбі голубчики зі сметаною <span><em>/ Buckwheat baby cabbage rolls with sour cream</em></span>
-							</td>
-							<td>250</td>
-							<td>175</td>
-						</tr>
-						<tr>
-							<td>
-								Кольорові млинці з куркою і грибами <span><em>/ Colored pancakes with chicken and mushrooms</em></span>
-							</td>
-							<td>250</td>
-							<td>185</td>
-						</tr>
-						<tr>
-							<td>
-								Сир Халумі на грилі з апельсиновим конфітюром <span><em>/ Grilled Halloumi cheese with orange jam</em></span>
-							</td>
-							<td>150</td>
-							<td>235</td>
-						</tr>
-						<tr>
-							<td>
-								Фірмові деруни з грибним соусом та пармезаном <span><em>/</em> <em>Signature potato pancakes (</em>deruny) </span><span><em>with mushroom sauce and parmesan</em></span>
-							</td>
-							<td>250</td>
-							<td>195</td>
-						</tr>
-						<tr>
-							<td>
-								Фірмові деруни з лососем від Шефа <span><em>/ Signature potato pancakes (deruny) with salmon from the Chief</em></span>
-							</td>
-							<td>200</td>
-							<td>425</td>
-						</tr>
-						<tr>
-							<td>
-								Смажені пельмені з сирним соусом <span><em>/ Fried dumplings with cheese sauce</em></span>
-							</td>
-							<td>200</td>
-							<td>215</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</main>
+        </div>
+      </section>
 
-		<footer class="footer">
-			<div class="footer__container">
-				<div>
-					<h6>Contact information</h6>
-					<p>просп. Володимира Івасюка, 1 +38 (099) 999 99 99</p>
-				</div>
-				<div><img src="img/logo-big.png" alt="" /></div>
-				<div>
-					<h6>Working hours</h6>
-					<p>Mon-Sun : 9 a.m to 8 p.m</p>
-				</div>
-			</div>
-			<address><p>© 2023 Ukrainian restaurant.</p></address>
-		</footer>
-	</body>
+      <!-- --------  -------- -->
+      <section class="snack">
+        <div class="tabs__container">
+          <div class="tabs__content-items">
+
+            <div class="snack__tabs-item">
+              <img class="snack__img"
+                   src="img/header-bg-img.jpeg"
+                   alt="img" />
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <h3>ГАРЯЧІ ЗАКУСКИ | HOT APPETIZERS</h3>
+                    </td>
+                    <td>Вихід, г</td>
+                    <td>Ціна, грн</td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      Гречані бейбі голубчики зі сметаною <span><em>/ Buckwheat baby cabbage rolls with sour
+                          cream</em></span>
+                    </td>
+                    <td>250</td>
+                    <td>175</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Кольорові млинці з куркою і грибами <span><em>/ Colored pancakes with chicken and
+                          mushrooms</em></span>
+                    </td>
+                    <td>250</td>
+                    <td>185</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Сир Халумі на грилі з апельсиновим конфітюром <span><em>/ Grilled Halloumi cheese with orange
+                          jam</em></span>
+                    </td>
+                    <td>150</td>
+                    <td>235</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Фірмові деруни з грибним соусом та пармезаном <span><em>/</em> <em>Signature potato pancakes
+                          (</em>deruny)
+                      </span><span><em>with mushroom sauce and parmesan</em></span>
+                    </td>
+                    <td>250</td>
+                    <td>195</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Фірмові деруни з лососем від Шефа <span><em>/ Signature potato pancakes (deruny) with salmon
+                          from the
+                          Chief</em></span>
+                    </td>
+                    <td>200</td>
+                    <td>425</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Смажені пельмені з сирним соусом <span><em>/ Fried dumplings with cheese sauce</em></span>
+                    </td>
+                    <td>200</td>
+                    <td>215</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="snack__tabs-item">
+              <img class="snack__img"
+                   src="img/header-bg-img.jpeg"
+                   alt="img" />
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <h3>ГАРЯЧІ ЗАКУСКИ | HOT APPETIZERS</h3>
+                    </td>
+                    <td>Вихід, г</td>
+                    <td>Ціна, грн</td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      Гречані бейбі голубчики зі сметаною <span><em>/ Buckwheat baby cabbage rolls with sour
+                          cream</em></span>
+                    </td>
+                    <td>250</td>
+                    <td>175</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Кольорові млинці з куркою і грибами <span><em>/ Colored pancakes with chicken and
+                          mushrooms</em></span>
+                    </td>
+                    <td>250</td>
+                    <td>185</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Сир Халумі на грилі з апельсиновим конфітюром <span><em>/ Grilled Halloumi cheese with orange
+                          jam</em></span>
+                    </td>
+                    <td>150</td>
+                    <td>235</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Фірмові деруни з грибним соусом та пармезаном <span><em>/</em> <em>Signature potato pancakes
+                          (</em>deruny)
+                      </span><span><em>with mushroom sauce and parmesan</em></span>
+                    </td>
+                    <td>250</td>
+                    <td>195</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Фірмові деруни з лососем від Шефа <span><em>/ Signature potato pancakes (deruny) with salmon
+                          from the
+                          Chief</em></span>
+                    </td>
+                    <td>200</td>
+                    <td>425</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Смажені пельмені з сирним соусом <span><em>/ Fried dumplings with cheese sauce</em></span>
+                    </td>
+                    <td>200</td>
+                    <td>215</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="snack__tabs-item">
+              <img class="snack__img"
+                   src="img/header-bg-img.jpeg"
+                   alt="img" />
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <h3>ГАРЯЧІ ЗАКУСКИ | HOT APPETIZERS</h3>
+                    </td>
+                    <td>Вихід, г</td>
+                    <td>Ціна, грн</td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      Гречані бейбі голубчики зі сметаною <span><em>/ Buckwheat baby cabbage rolls with sour
+                          cream</em></span>
+                    </td>
+                    <td>250</td>
+                    <td>175</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Кольорові млинці з куркою і грибами <span><em>/ Colored pancakes with chicken and
+                          mushrooms</em></span>
+                    </td>
+                    <td>250</td>
+                    <td>185</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Сир Халумі на грилі з апельсиновим конфітюром <span><em>/ Grilled Halloumi cheese with orange
+                          jam</em></span>
+                    </td>
+                    <td>150</td>
+                    <td>235</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Фірмові деруни з грибним соусом та пармезаном <span><em>/</em> <em>Signature potato pancakes
+                          (</em>deruny)
+                      </span><span><em>with mushroom sauce and parmesan</em></span>
+                    </td>
+                    <td>250</td>
+                    <td>195</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Фірмові деруни з лососем від Шефа <span><em>/ Signature potato pancakes (deruny) with salmon
+                          from the
+                          Chief</em></span>
+                    </td>
+                    <td>200</td>
+                    <td>425</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Смажені пельмені з сирним соусом <span><em>/ Fried dumplings with cheese sauce</em></span>
+                    </td>
+                    <td>200</td>
+                    <td>215</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="snack__tabs-item">
+              <img class="snack__img"
+                   src="img/header-bg-img.jpeg"
+                   alt="img" />
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <h3>ГАРЯЧІ ЗАКУСКИ | HOT APPETIZERS</h3>
+                    </td>
+                    <td>Вихід, г</td>
+                    <td>Ціна, грн</td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      Гречані бейбі голубчики зі сметаною <span><em>/ Buckwheat baby cabbage rolls with sour
+                          cream</em></span>
+                    </td>
+                    <td>250</td>
+                    <td>175</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Кольорові млинці з куркою і грибами <span><em>/ Colored pancakes with chicken and
+                          mushrooms</em></span>
+                    </td>
+                    <td>250</td>
+                    <td>185</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Сир Халумі на грилі з апельсиновим конфітюром <span><em>/ Grilled Halloumi cheese with orange
+                          jam</em></span>
+                    </td>
+                    <td>150</td>
+                    <td>235</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Фірмові деруни з грибним соусом та пармезаном <span><em>/</em> <em>Signature potato pancakes
+                          (</em>deruny)
+                      </span><span><em>with mushroom sauce and parmesan</em></span>
+                    </td>
+                    <td>250</td>
+                    <td>195</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Фірмові деруни з лососем від Шефа <span><em>/ Signature potato pancakes (deruny) with salmon
+                          from the
+                          Chief</em></span>
+                    </td>
+                    <td>200</td>
+                    <td>425</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Смажені пельмені з сирним соусом <span><em>/ Fried dumplings with cheese sauce</em></span>
+                    </td>
+                    <td>200</td>
+                    <td>215</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="snack__tabs-item">
+              <img class="snack__img"
+                   src="img/header-bg-img.jpeg"
+                   alt="img" />
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <h3>ГАРЯЧІ ЗАКУСКИ | HOT APPETIZERS</h3>
+                    </td>
+                    <td>Вихід, г</td>
+                    <td>Ціна, грн</td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      Гречані бейбі голубчики зі сметаною <span><em>/ Buckwheat baby cabbage rolls with sour
+                          cream</em></span>
+                    </td>
+                    <td>250</td>
+                    <td>175</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Кольорові млинці з куркою і грибами <span><em>/ Colored pancakes with chicken and
+                          mushrooms</em></span>
+                    </td>
+                    <td>250</td>
+                    <td>185</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Сир Халумі на грилі з апельсиновим конфітюром <span><em>/ Grilled Halloumi cheese with orange
+                          jam</em></span>
+                    </td>
+                    <td>150</td>
+                    <td>235</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Фірмові деруни з грибним соусом та пармезаном <span><em>/</em> <em>Signature potato pancakes
+                          (</em>deruny)
+                      </span><span><em>with mushroom sauce and parmesan</em></span>
+                    </td>
+                    <td>250</td>
+                    <td>195</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Фірмові деруни з лососем від Шефа <span><em>/ Signature potato pancakes (deruny) with salmon
+                          from the
+                          Chief</em></span>
+                    </td>
+                    <td>200</td>
+                    <td>425</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Смажені пельмені з сирним соусом <span><em>/ Fried dumplings with cheese sauce</em></span>
+                    </td>
+                    <td>200</td>
+                    <td>215</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="snack__tabs-item">
+              <img class="snack__img"
+                   src="img/header-bg-img.jpeg"
+                   alt="img" />
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <h3>ГАРЯЧІ ЗАКУСКИ | HOT APPETIZERS</h3>
+                    </td>
+                    <td>Вихід, г</td>
+                    <td>Ціна, грн</td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      Гречані бейбі голубчики зі сметаною <span><em>/ Buckwheat baby cabbage rolls with sour
+                          cream</em></span>
+                    </td>
+                    <td>250</td>
+                    <td>175</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Кольорові млинці з куркою і грибами <span><em>/ Colored pancakes with chicken and
+                          mushrooms</em></span>
+                    </td>
+                    <td>250</td>
+                    <td>185</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Сир Халумі на грилі з апельсиновим конфітюром <span><em>/ Grilled Halloumi cheese with orange
+                          jam</em></span>
+                    </td>
+                    <td>150</td>
+                    <td>235</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Фірмові деруни з грибним соусом та пармезаном <span><em>/</em> <em>Signature potato pancakes
+                          (</em>deruny)
+                      </span><span><em>with mushroom sauce and parmesan</em></span>
+                    </td>
+                    <td>250</td>
+                    <td>195</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Фірмові деруни з лососем від Шефа <span><em>/ Signature potato pancakes (deruny) with salmon
+                          from the
+                          Chief</em></span>
+                    </td>
+                    <td>200</td>
+                    <td>425</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Смажені пельмені з сирним соусом <span><em>/ Fried dumplings with cheese sauce</em></span>
+                    </td>
+                    <td>200</td>
+                    <td>215</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__inner">
+
+          <div class="contact__info">
+            <h6 class="contact__title">Contact information</h6>
+            <p>просп. Володимира Івасюка, 1 +38 (099) 999 99 99</p>
+          </div>
+
+          <img class="footer__logo"
+               src="img/logo-big.png"
+               alt="" />
+
+          <div class="working__hours">
+            <h6 class="working__title">Working hours</h6>
+            <p>Mon-Sun : 9 a.m to 8 p.m</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="copyright">
+        <small>&copy; 2023 Ukrainian restaurant</small>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
 </html>
